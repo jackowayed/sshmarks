@@ -1,0 +1,35 @@
+h1. SSH Marks
+
+h2. Bookmark your servers
+
+h3. Intro
+
+When sshing into a server, one often needs to type a long url, sometimes including subdomains. This is becomes tedious and time consuming for people who ssh into their servers many times per day. SSH Marks fixes this by allowing you to give terse nicknames to your servers. For example, instead of typing
+
+<pre><code>ssh username@subdomain.domain.com</code></pre>
+
+you type the username and domain once into the configuration file and then only have to type
+
+<pre><code>sshm nickname</code></pre>
+
+h3. Install
+
+After downloading the files or cloning the repository:
+
+Put the <code>sshmarks.bash</code> file anywhere and add the line 
+
+<pre><code>source /path/to/sshmarks.bash</code></pre>
+
+to your <code>~/.bashrc</code> file. (<code>/path/to/</code> should be replaced with the full file path to that file (<code>~/code/sshmarks/</code>, for instance).)
+
+Copy the <code>sshmarks.rb</code> file to somewhere in your $PATH (like <code>/usr/bin/</code>) and rename it to <code>sshmarks</code> (no file extension). 
+
+h3. Listing Servers
+
+After installing, you need to tell SSH Marks what servers you ssh into and what nicknames you want them to have. 
+
+TODO Figure out how this is workind and update.
+
+h3. License
+
+This software, Copyright 2009 Daniel Jackoway, is released under the MIT License. See the <code>COPYING</code> file for the full terms of the license. 
